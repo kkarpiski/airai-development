@@ -96,8 +96,18 @@ public class OpenWeatherPollutionServlet {
                     Object stationValue = obj.get(stationkey);
                     System.out.println(stationkey + " : " + stationValue);
 
-                    map.put(stationkey, String.valueOf(stationKeys));
+
                 }
+                map.put("co", String.valueOf(stationKeys));
+                map.put("no", String.valueOf(stationKeys));
+                map.put("no2", String.valueOf(stationKeys));
+                map.put("so2", String.valueOf(stationKeys));
+                map.put("o3", String.valueOf(stationKeys));
+                map.put("pm2_5", String.valueOf(stationKeys));
+                map.put("pm10", String.valueOf(stationKeys));
+                map.put("nh3", String.valueOf(stationKeys));
+                map.put("time", String.valueOf(stationKeys));
+                map.put("station", id);
             }
         }
         return map;
